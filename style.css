@@ -1,10 +1,27 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 header {
 	background: #ffffff;
-	border-color: #cccccc;
-	border-bottom: solid;
+	border-bottom: 3px solid #585858;
 	width: 100%;
   	margin-bottom: 20px;
   	float: left;
+}
+
+.header {
+	float: right;
+	margin-right: 184px;
+	display: flex;
+	flex-direction: row;
+	font-size: 18px;
+}
+
+a {
+	color: #9A9797;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 body {
@@ -24,11 +41,16 @@ h1 {
 	margin-bottom: 0px;
 	margin-top: 0px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
 }
 
 .name {
+	border-bottom: 3px solid #dfdfdf;
+	text-align: left;
+	padding-bottom: 20px;
 	color: #4aaaa5;
+	font-size: 36px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .container {
@@ -43,10 +65,11 @@ h1 {
 	width: 650px;
 	border: solid #ffffff;
 	margin-left: 184px;
+	min-height: 100%;
 }
 
 #bio-image {
-	float: center;
+	float: left;
 	width: 200px;
 	height: 200px;
 	margin-right: 20px;
@@ -55,7 +78,6 @@ h1 {
 .Sidebar {
 	width: 270px;
 	height: 150px;
-	padding-left: 15px;
 	float: left;
 	border: solid #ffffff;
 	background: #ffffff;
@@ -63,13 +85,20 @@ h1 {
 	position: relative;
 }
 
-h2 {
+h3 {
+	border-bottom: 2px solid #dfdfdf;
+	bottom: 50%;
+	text-align: center;
+	padding-bottom: 11px;
 	color: #4aaaa5;
-	text-align: left;
+	font-size: 21px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.images {
-	border: #ffffff;
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .Mail {
@@ -92,15 +121,14 @@ h2 {
 	padding: 5px;
 }
 
-.absolute {
+.footer {
 	background: #666666;
 	color: #ffffff;
 	font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
 	font-size: 14px;
 	padding: 20px;
-	margin-top: 800px;
-  	position: absolute;
+	height: 50px;
   	width: 100%;
-  	border-top-color: solid #4aaaa5;
+	border-top: 1px solid #669999;
 }
